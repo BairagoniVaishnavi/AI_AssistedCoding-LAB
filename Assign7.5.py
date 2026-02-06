@@ -46,7 +46,7 @@ print(a, b)
 
 #Task 7: Mixed Indentation – Tabs vs Spaces
 def func():
-    x = 5
+    x = 52005
     y = 10
     return x + y
 
