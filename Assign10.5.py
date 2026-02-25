@@ -111,3 +111,56 @@ if validate_password(user_password):
     print("Strong Password")
 else:
     print("Weak Password")
+
+#Student Attendance Tracking (Using Hash Table)
+class AttendanceSystem:
+    def __init__(self):
+        # Dictionary to store student_id: attendance_status
+        self.attendance = {}
+
+    def mark_attendance(self, student_id, status):
+        self.attendance[student_id] = status
+        print("Attendance recorded successfully.")
+
+    def view_attendance(self, student_id):
+        if student_id in self.attendance:
+            return f"Student {student_id}: {self.attendance[student_id]}"
+        return "Student record not found."
+
+    def display_all(self):
+        if not self.attendance:
+            print("No attendance records available.")
+        else:
+            print("\nAttendance Records:")
+            for student_id, status in self.attendance.items():
+                print(f"{student_id} → {status}")
+
+
+system = AttendanceSystem()
+
+while True:
+    print("\n1. Mark Attendance")
+    print("2. View Attendance")
+    print("3. View All Records")
+    print("4. Exit")
+
+    choice = input("Enter choice: ")
+
+    if choice == "1":
+        student_id = input("Enter Student ID: ")
+        status = input("Enter Status (Present/Absent): ")
+        system.mark_attendance(student_id, status)
+
+    elif choice == "2":
+        student_id = input("Enter Student ID to view: ")
+        print(system.view_attendance(student_id))
+
+    elif choice == "3":
+        system.display_all()
+
+    elif choice == "4":
+        print("Exiting system...")
+        break
+
+    else:
+        print("Invalid choice.")
