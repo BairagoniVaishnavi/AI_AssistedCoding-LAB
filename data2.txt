@@ -1,0 +1,2 @@
+Hello from data2 file
+Python file handling test.
