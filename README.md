@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # AI-Assisted-Coding
 =======
 # AI_AssistedCoding-LAB
@@ -11,5 +12,8 @@
 =======
 
  AI-Assisted-Coding
+=======
+AI-Assisted-Coding
+>>>>>>> 76451b99a994563d446732ea7732dfa943bb4a64
 
 >>>>>>> 9e2dbfd0a24c1e214a5ce62315d3ce29c6418868
